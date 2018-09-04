@@ -31,13 +31,14 @@ function viewCart() {
     while (i<cart.length){
       str += `${cart[i].itemName} at $${cart[i].itemPrice}`;
       i+=1
-      if (i===length.cart){
+      if (i===cart.length){
        str+=`, and ${cart[i].itemName} at $${cart[i].itemPrice}`
+       return str;
        }else{
          str+=`, `
        }
     }
-  }return str;
+  }
 }    
 
 
