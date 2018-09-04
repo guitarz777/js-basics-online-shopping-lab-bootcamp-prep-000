@@ -56,12 +56,7 @@ function removeFromCart(item) {
     if (cart[i].itemName===item){
       cart.splice(cart(i, 1))
       return cart
-    }else{
-      
-    return "Cart is empty"  
-      
-    } 
-  
+    }
   }
 }
 
