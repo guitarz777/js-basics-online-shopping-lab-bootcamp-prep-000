@@ -61,7 +61,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (!cardNumber.isIntiger){
+  if (cardNumber.isIntiger){
     return "Sorry, we don't have a credit card on file for you."
   }else{
     var sum = total();
