@@ -61,7 +61,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber.isInteger){
+  if (Number.isInteger(cardNumber)){
     var sum = total();
     return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
     
