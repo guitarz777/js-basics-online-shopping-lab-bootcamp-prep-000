@@ -30,12 +30,12 @@ function viewCart() {
     var i = 0;
     while (i<cart.length){
       str += `${cart[i].itemName} at $${cart[i].itemPrice}`;
-      i+=1
+      i+=1;;
       if (i===cart.length){
-       str+=`, and ${cart[i].itemName} at $${cart[i].itemPrice}.`
+       str+=`, and ${cart[i-1].itemName} at $${cart[i-1].itemPrice}.`;
        return str;
        }else{
-         str+=`, `
+         str+=`, `;
        }
     }
   }
