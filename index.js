@@ -32,7 +32,7 @@ function viewCart() {
       str += `${cart[i].itemName} at $${cart[i].itemPrice}`;
       i+=1
       if (i===length.cart){
-       str+=`${cart[i].itemName} at $${cart[i].itemPrice}`
+       str+=`, and ${cart[i].itemName} at $${cart[i].itemPrice}`
        }else{
          str+=`, `
        }
