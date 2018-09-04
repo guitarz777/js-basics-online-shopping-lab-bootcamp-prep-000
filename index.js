@@ -20,22 +20,12 @@ function addToCart(item) {
 
 function viewCart() {
   var str='In your cart, you have '
-  if (cart.length>0){
-    for (let i=0; i<cart.length; i++){
-      var item = Object.keys(cart[i])
-      var price = Object.values(cart[i])
-      str += `${itemName} at $${pricePrice}`
-      if (i+1<cart.length){
-        str += ", "
-      }else{
-        str += "."
-      }
-    }
-    return str
-  }else{
-    return "Your shopping cart is empty."
+  if (cart.length<1){
+    
   }
-}
+}else if (cart.length===1){
+  
+}e
 
 function total() {
   // write your code here
