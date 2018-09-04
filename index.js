@@ -52,7 +52,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  if item in Object.key(cart){
+    delete cart[item]
+  }
 }
 
 function placeOrder(cardNumber) {
