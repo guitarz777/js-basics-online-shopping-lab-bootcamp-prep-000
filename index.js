@@ -52,7 +52,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (item in Object.key(cart)){
+  if (item in Object.keys(cart)){
     delete cart[item];
   }
 }
